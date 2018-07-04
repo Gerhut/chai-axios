@@ -1,0 +1,38 @@
+{
+  "name": "chai-axios",
+  "version": "0.0.0",
+  "description": "Testing HTTP server using chai & axios.",
+  "main": "index.js",
+  "scripts": {
+    "lint": "standard",
+    "pretest": "npm run lint",
+    "test": "ava",
+    "posttest": "nyc ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gerhut/chai-axios.git"
+  },
+  "keywords": [
+    "axios",
+    "test",
+    "chai",
+    "chai-plugin",
+    "http"
+  ],
+  "author": "George Cheng <Gerhut@GMail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Gerhut/chai-axios/issues"
+  },
+  "homepage": "https://github.com/Gerhut/chai-axios#readme",
+  "dependencies": {
+    "axiosist": "^0.1.1"
+  },
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "chai": "^4.1.2",
+    "nyc": "^12.0.2",
+    "standard": "^11.0.1"
+  }
+}

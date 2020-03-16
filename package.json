@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/Gerhut/chai-axios#readme",
   "dependencies": {
-    "axiosist": "^0.1.1"
+    "axiosist": "^0.8.0"
   },
   "devDependencies": {
     "ava": "^0.25.0",

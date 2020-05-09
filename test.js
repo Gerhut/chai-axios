@@ -1,14 +1,14 @@
-import test from 'ava'
-import chaiAxios from '.'
-import chai from 'chai'
+const test = require('ava')
+const chaiAxios = require('.')
+const chai = require('chai')
 
 chai.use(chaiAxios)
 
-test('should pass test', t => t.notThrows(
+test('should pass test', t => t.notThrowsAsync(
   chai.axios((req, res) => res.end())
     .get('/').then(response =>
       chai.expect(response).to.include({ status: 200 }))))
-test('should fail test', t => t.notThrows(
+test('should fail test', t => t.notThrowsAsync(
   chai.axios((req, res) => {
     res.statusCode = 400
     res.end()
